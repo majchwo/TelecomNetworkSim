@@ -1,0 +1,48 @@
+# kazda linia zaczynajaca sie od # jest ignorowana
+# kolejnosc danych bedzie zawsze taka sama
+# liczba wezlow, wezly numerowane sa od 1
+WEZLY = 10
+# kazdy wezel to trojka (identyfikator, wspolrzedna X, wspolrzedna Y)
+1 10 50 1
+2 30 56 0 
+3 45 20 0 
+4 90 23 1
+5 44 33 0
+6 56 21 0
+7 10 10 0
+8 100 65 0
+9 20 10 0
+10 50 50 1
+# liczba krawedzi
+LACZA = 22
+# kazde lacze to trojka (identyfikator, wezel poczatkowy, wezel koncowy)
+1 1 2
+2 2 3
+3 3 4
+4 4 5
+5 5 1
+6 1 3
+7 2 3
+8 2 4
+9 2 5
+10 8 9
+11 9 10
+12 10 1
+13 7 10
+14 6 1
+15 7 6
+16 1 7
+17 7 9
+18 9 4
+19 4 8
+20 4 10
+21 10 8
+22 2 8
+# algorytm, ktory nalezy wywolac; mozliwosci: MST, SCIEZKA, FLOYD
+ALGORYTM = M
+# jezeli algorytmem jest MCIEZKA to w kolejnej linii mamy pare interesujacych nas wezlow
+1 4
+# jezeli algorytmem jest FLOYD to w kolejnych liniach, az do konca pliku, mamy interesujace nas pary wezlow, np.
+2 1
+2 5
+3 4
